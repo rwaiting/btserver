@@ -26,6 +26,6 @@ RUN cd /home \
 
 WORKDIR /www/wwwroot
 CMD /entrypoint.sh
-EXPOSE 8888 888 21 20 443 80
+EXPOSE 80 443 63322 8888 888
 
 HEALTHCHECK --interval=5s --timeout=3s CMD curl -fs http://localhost:8888/ && curl -fs http://localhost/ || exit 1
