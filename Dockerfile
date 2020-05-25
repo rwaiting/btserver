@@ -1,4 +1,4 @@
-FROM rawait/btserver:clear
+FROM rawait/btserver
 MAINTAINER rawait
 
 RUN bash /www/server/panel/install/install_soft.sh 0 install apache 2.4
