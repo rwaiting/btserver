@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM centos:7
 MAINTAINER rawait
 
 #设置entrypoint和letsencrypt映射到www文件夹下持久化
