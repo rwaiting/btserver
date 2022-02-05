@@ -17,7 +17,7 @@ RUN mkdir -p /www/letsencrypt \
 RUN cd /home \
     && yum -y install wget openssh-server \
     && echo 'Port 63322' > /etc/ssh/sshd_config \
-    && wget -O install.sh http://download.bt.cn/install/install_6.0.sh \
+    && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh \
     && echo y | bash install.sh \
     && python /btdefault.py \
     && echo '["linuxsys", "webssh"]' > /www/server/panel/config/index.json \
